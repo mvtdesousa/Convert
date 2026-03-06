@@ -70,8 +70,7 @@ function convertCurrency (amount, price, symbol) {
 
         let total = amount * price
         total = formatCurrencyBRL(total).replace("R$", "")
-        result.textContent = `${total} Reais`
-
+        result.textContent = `R$${total}`
         footer.classList.add("show-result")
 
     } catch (error) {
